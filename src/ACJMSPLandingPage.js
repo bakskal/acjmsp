@@ -208,15 +208,15 @@ export default function ACJMSPLandingPage() {
               <div className="contact-list">
                 <div className="contact-item">
                   <i className="fas fa-envelope contact-icon"></i>
-                  <span className="contact-text">info@acjmsp.org</span>
+                  <span className="contact-text">contact@acjmsp.com</span>
                 </div>
                 <div className="contact-item">
                   <i className="fas fa-phone-alt contact-icon"></i>
-                  <span className="contact-text">(555) 123-4567</span>
+                  <span className="contact-text">(210) 123-4567</span>
                 </div>
                 <div className="contact-item">
                   <i className="fas fa-map-marker-alt contact-icon"></i>
-                  <span className="contact-text">123 Non-Profit Way, Suite 200<br />Anywhere, USA 12345</span>
+                  <span className="contact-text">123 Non-Profit Way, Suite 200<br />San Antonio, TX </span>
                 </div>
               </div>
             </div>
