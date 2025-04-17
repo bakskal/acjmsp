@@ -2,7 +2,6 @@
   "name": "acjmsp",
   "version": "0.1.0",
   "private": true,
-  "homepage":"acjmsp.pages.dev",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
