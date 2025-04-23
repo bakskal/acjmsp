@@ -208,18 +208,23 @@ export default function ACJMSPLandingPage() {
               <div className="contact-list">
                 <div className="contact-item">
                   <i className="fas fa-envelope contact-icon"></i>
-                  <span className="contact-text">contact@acjmsp.com</span>
+                  <span className="contact-text">abrar@acjmsp.com</span>
                 </div>
+
+                {/* Parked
                 <div className="contact-item">
                   <i className="fas fa-phone-alt contact-icon"></i>
                   <span className="contact-text">(210) 123-4567</span>
-                </div>
+                </div> */}
+
+                {/* Parked
                 <div className="contact-item">
                   <i className="fas fa-map-marker-alt contact-icon"></i>
                   <span className="contact-text">123 Non-Profit Way, Suite 200<br />San Antonio, TX </span>
-                </div>
+                </div> */}
               </div>
             </div>
+            {/*
             <div className="footer-column">
               <h4 className="footer-heading">Stay Connected</h4>
               <p className="newsletter-text">Subscribe to our newsletter for non-profit tech tips and updates.</p>
@@ -232,7 +237,7 @@ export default function ACJMSPLandingPage() {
                 />
                 <button className="newsletter-button">Subscribe</button>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="footer-bottom">
             <p className="copyright-text">© {new Date().getFullYear()} ACJMSP. All rights reserved.</p>
