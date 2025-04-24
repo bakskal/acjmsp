@@ -225,7 +225,7 @@ export default function ACJMSPLandingPage() {
               <div className="contact-list">
                 <div className="contact-item">
                   <i className="fas fa-envelope contact-icon"></i>
-                  <span className="contact-text">abrar@acjmsp.com</span>
+                  <span className="contact-text">hello@acjmsp.com</span>
                 </div>
 
                 {/* Parked
