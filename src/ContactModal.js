@@ -61,7 +61,7 @@ const ContactModal = ({ isOpen, onClose }) => {
               <input type="email" name="email" placeholder="Your Email" required />
               <input type="text" name="organization" placeholder="Organization Name" />
               <input type="text" name="subject" placeholder="Subject" required />
-              <textarea name="message" placeholder="How can we help your nonprofit?" required></textarea>
+              <textarea name="message" placeholder="How can we help your nonprofit?" required     style={{ fontFamily: 'inherit', fontSize: 'inherit' }} ></textarea>
               <button type="submit" disabled={submitting}>
                 {submitting ? "Sending..." : "Send Message"}
               </button>
