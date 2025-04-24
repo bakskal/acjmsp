@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
-import './ContactModal.css'; // Optional: for styling
+import React, { useState, useRef, useEffect } from 'react';
+import './ContactModal.css'; // Make sure this path is correct
 
 const ContactModal = ({ isOpen, onClose }) => {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const modalContentRef = useRef(null);
 
-  if (!isOpen) return null;
+  useEffect(() => {
+    if (modalContentRef.current) {
+      modalContentRef.current.style.maxHeight = isOpen
+        ? `${modalContentRef.current.scrollHeight}px`
+        : '0px';
+      modalContentRef.current.style.opacity = isOpen ? '1' : '0';
+    }
+  }, [isOpen]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -37,7 +45,7 @@ const ContactModal = ({ isOpen, onClose }) => {
 
   return (
     <div className="contact-inline-form">
-      <div className="form-content">
+      <div className="form-content" ref={modalContentRef}>
         {submitted ? (
           <>
             <h2>Thank you!</h2>
