@@ -1,9 +1,16 @@
 import { useState } from 'react';
 import './Acj.css'
+import './ContactModal.css'; // for animation
+import ContactModal from './ContactModal';
+
 export default function ACJMSPLandingPage() {
   const [activeTab, setActiveTab] = useState('services');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showForm, setShowForm] = useState(false);
 
+  const toggleForm = () => {
+    setShowForm(prev => !prev);
+  };
   const services = [
     { 
       id: 1, 
@@ -183,14 +190,24 @@ export default function ACJMSPLandingPage() {
 
         {/* CTA Section */}
         <section className="cta-section">
-          <div className="container text-center">
-            <h2 className="cta-title">Ready to Optimize Your Non-Profit's Technology?</h2>
-            <p className="cta-text">
-              Let's discuss how we can support your mission with tailored IT solutions.
-            </p>
-            <button className="cta-button-large">Schedule Your Free Consultation</button>
-          </div>
-        </section>
+  <div className="container text-center">
+    <h2 className="cta-title">Ready to Optimize Your Non-Profit's Technology?</h2>
+    <p className="cta-text">
+      Let's discuss how we can support your mission with tailored IT solutions.
+    </p>
+    <button className="cta-button-large" onClick={toggleForm}>
+      Schedule Your Free Consultation
+    </button>
+
+    <div className={`contact-form-wrapper ${showForm ? 'open' : ''}`}>
+  {showForm && (
+    <ContactModal isOpen={true} onClose={() => setShowForm(false)} />
+  )}
+</div>
+
+  </div>
+</section>
+
       </main>
 
       {/* Footer */}
